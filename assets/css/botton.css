@@ -1,0 +1,52 @@
+.container-botton{
+    position: relative;
+    min-width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px 1px #171717b3;
+}
+
+.container-botton::before{
+    content: '';
+    width: 230px;
+    height: 230px;
+    background-image: linear-gradient(to right,white, transparent 50%);
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    opacity: 0.9;
+    z-index: 1;
+    transform: rotate(220deg);
+    filter: blur(3px);
+}
+.container-botton::after{
+    content: '';
+    width: 230px;
+    height: 230px;
+    background-image: linear-gradient(to right,#ffffff, transparent 15%);
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    opacity: 0.9;
+    z-index: 1;
+    transform: rotate(35deg);
+    filter: blur(2px);
+}
+
+.botton {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: #bfc3c409;
+    box-shadow: inset 3px 5px 8px 2px #5f5f5fe8, inset -2px -2px 8px 6px #00000098;
+    border-radius: 50%;
+
+}
+
+.botton-image{
+  position: absolute;
+  height: 100%;
+}
