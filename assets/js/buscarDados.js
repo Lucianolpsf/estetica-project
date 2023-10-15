@@ -1,7 +1,7 @@
 import { users } from "./users.js"
 
 function buscarDados (nickname){
-    return fetch(`http://api.github.com/users/${nickname}`)
+    return fetch(`https://api.github.com/users/${nickname}`)
     .then(response => response.json())
     .catch( err => console.log(err))
 }
