@@ -1,7 +1,7 @@
 .container-botton{
     position: relative;
-    min-width: 250px;
-    height: 250px;
+    min-width: var(--botton-size);
+    height: var(--botton-size);
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 4px 4px 8px 1px #171717b3;
@@ -9,8 +9,8 @@
 
 .container-botton::before{
     content: '';
-    width: 230px;
-    height: 230px;
+    width: var(--reflex-size);
+    height: var(--reflex-size);
     background-image: linear-gradient(to right,white, transparent 50%);
     position: absolute;
     border-radius: 50%;
@@ -23,8 +23,8 @@
 }
 .container-botton::after{
     content: '';
-    width: 230px;
-    height: 230px;
+    width: var(--reflex-size);
+    height: var(--reflex-size);
     background-image: linear-gradient(to right,#ffffff, transparent 15%);
     position: absolute;
     border-radius: 50%;
@@ -38,8 +38,8 @@
 
 .botton {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: var(--botton-size);
+    height: var(--botton-size);
     background-color: #bfc3c409;
     box-shadow: inset 3px 5px 8px 2px #5f5f5fe8, inset -2px -2px 8px 6px #00000098;
     border-radius: 50%;

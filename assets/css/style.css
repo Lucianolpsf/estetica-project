@@ -7,19 +7,22 @@
 }
 
 :root{
-    --background: #d7d7d7;
-    --container:#666666;
+    --light: #d7d7d7;
+    --medium:#666666;
+    --dark:black;
+    --blue: #086cb4;
+    --botton-size: 12em;
+    --reflex-size: 11em;
 }
 
 body {
     height: 100vh;
-    background-color: var(--background);
+    background-color: var(--blue);
 }
 
 main{
     height: 60%;
     margin: 4em 1em;
-    background-color: var(--container);
 
 }
 
@@ -29,4 +32,47 @@ main{
     justify-content: center;
     align-items: center;
     gap: 1em;
+    background-color: var(--light);
+    flex-wrap: wrap;
+}
+
+.git-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--medium);
+}
+.div-botton{
+    padding: 1em;
+}
+
+.div-information{
+    background-color: var(--dark);
+    padding: 1em;
+    display:flex;
+    flex-direction: column;
+}
+
+#user-name{
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    background-color: var(--container);
+    margin-top: 1em;
+}
+
+.redes img {
+    width: 3em;
 }
